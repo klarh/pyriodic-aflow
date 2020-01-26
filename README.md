@@ -13,7 +13,8 @@ streamlined way to access the data using a python interface.
 
 Install `pyriodic-aflow` from source:
 
-```pip install git+https://github.com/klarh/pyriodic-aflow
+```
+pip install git+https://github.com/klarh/pyriodic-aflow
 ```
 
 ## Citation
