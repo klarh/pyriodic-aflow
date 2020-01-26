@@ -9,6 +9,13 @@ project](http://aflowlib.org/) available using the API of the
 This project is not affiliated with AFLOW and merely provides a
 streamlined way to access the data using a python interface.
 
+## Installation
+
+Install `pyriodic-aflow` from source:
+
+```pip install git+https://github.com/klarh/pyriodic-aflow
+```
+
 ## Citation
 
 The AFLOW developers request that you cite the following papers when
