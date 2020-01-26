@@ -1,0 +1,3 @@
+include setup.py LICENSE README.md
+include pyriodic_aflow/unit_cells/aflow_db.json
+recursive-include pyriodic_aflow *.py
