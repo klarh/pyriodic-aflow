@@ -26,6 +26,7 @@ setup(name='pyriodic-aflow',
           'pyriodic_sources': ['aflow = pyriodic_aflow.unit_cells:load_standard'],
       },
       extras_require={},
+      include_package_data=True,
       install_requires=[
           'pyriodic-structures',
       ],
@@ -34,6 +35,7 @@ setup(name='pyriodic-aflow',
       long_description_content_type='text/markdown',
       packages=[
           'pyriodic_aflow',
+          'pyriodic_aflow.unit_cells',
       ],
       project_urls={
           'Documentation': 'http://pyriodic.readthedocs.io/',
