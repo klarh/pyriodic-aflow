@@ -3,8 +3,15 @@
 import os
 from setuptools import setup
 
-with open('pyriodic_aflow/version.py') as version_file:
+THIS_DIR = os.path.dirname(os.path.abspath(__file__))
+
+version_fname = os.path.join(THIS_DIR, 'pyriodic_aflow', 'version.py')
+with open(version_fname) as version_file:
     exec(version_file.read())
+
+readme_fname = os.path.join(THIS_DIR, 'README.md')
+with open(readme_fname) as readme_file:
+    long_description = readme_file.read()
 
 setup(name='pyriodic-aflow',
       author='Matthew Spellings',
@@ -23,9 +30,16 @@ setup(name='pyriodic-aflow',
           'pyriodic-structures',
       ],
       license='GPL3',
+      long_description=long_description,
+      long_description_content_type='text/markdown',
       packages=[
           'pyriodic_aflow',
       ],
+      project_urls={
+          'Documentation': 'http://pyriodic.readthedocs.io/',
+          'Source': 'https://github.com/klarh/pyriodic-aflow'
+          },
       python_requires='>=3',
+      url='http://github.com/klarh/pyriodic-aflow',
       version=__version__
       )
